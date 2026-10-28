@@ -8,6 +8,8 @@ name: Build iOS IPA
 # separate Linux "iOS compatibility gate" workflow.
 
 on:
+  push:
+    branches: ['build/unsigned-ipa-20261028']
   workflow_dispatch:
     inputs:
       bundle_id:
